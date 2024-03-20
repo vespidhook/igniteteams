@@ -1,10 +1,13 @@
-import { Header } from '@components/Header';
-import { Container } from './styles';
-import { Highlight } from '@components/Highlight';
-import { GroupCard } from '@components/GroupCard';
 import { useState } from 'react';
 import { FlatList } from 'react-native';
+
+import { Header } from '@components/Header';
+import { Highlight } from '@components/Highlight';
+import { GroupCard } from '@components/GroupCard';
 import { ListEmpty } from '@components/ListEmpty';
+
+import { Container } from './styles';
+import { Button } from '@components/Button';
 
 export default function Groups() {
   const [groups, setGroups] = useState<string[]>([]);
@@ -29,6 +32,12 @@ export default function Groups() {
         ListEmptyComponent={() => (
           <ListEmpty message="Nenhuma turma encontrada." />
         )}
+      />
+
+      <Button 
+        title="Criar turma" 
+        type="SECONDARY" 
+        onPress={() => {}}
       />
     </Container>
   );
