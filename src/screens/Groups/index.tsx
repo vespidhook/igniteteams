@@ -36,7 +36,7 @@ export function Groups() {
 
       <Button 
         title="Criar turma" 
-        type="SECONDARY" 
+        type="PRIMARY" 
         onPress={() => {}}
       />
     </Container>
