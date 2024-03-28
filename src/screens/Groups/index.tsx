@@ -32,6 +32,7 @@ export function Groups() {
         ListEmptyComponent={() => (
           <ListEmpty message="Nenhuma turma encontrada." />
         )}
+        showsHorizontalScrollIndicator={false}
       />
 
       <Button 
